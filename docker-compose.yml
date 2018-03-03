@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  ui:
+    image: quay.io/sam_r_t/playgroundangular:1.1.0
+    ports:
+      - 4200:80
+  heroes:
+    image: quay.io/sam_r_t/playgroundwebservices:1.1.0
+    environment:
+      CORS_ORIGINS: http://localhost:4200
+    ports:
+      - 5000:80

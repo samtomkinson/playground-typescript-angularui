@@ -11,7 +11,8 @@ export class HomeToolsService {
 
   public getValues(): Observable<Hero[]> {
       return this.http
-        .get<Hero[]>('http://localhost:5000/api/v1/heroes')
+        // TODO: Add url host to a config
+        .get<Hero[]>(`http://localhost:5000/api/v1/heroes`)
         .pipe(catchError(this.handleError));
   }
 

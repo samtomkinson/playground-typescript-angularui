@@ -1,5 +1,11 @@
-.idea
+node_modules
+npm-debug.log
+Dockerfile*
+docker-compose*
+.dockerignore
 .git
 .gitignore
-node_modules
+README.md
+LICENSE
+.vscode
 dist
